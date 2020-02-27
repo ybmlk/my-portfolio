@@ -21,6 +21,10 @@ a.project {
   color: white;
 }
 
+a.contact-link {
+  color: #212529;
+}
+
 a:hover {
   color: #fec503;
 }
@@ -29,6 +33,12 @@ a.project:hover {
   color: #f0efef;
   text-decoration: none;
 }
+
+a.contact-link:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
 .text-primary {
   color: #fed136 !important;
 }
@@ -532,6 +542,10 @@ header.masthead .intro-text .intro-heading {
   margin-bottom: 0;
 }
 
+.timeline-body i {
+  font-size: 20px;
+}
+
 @media (min-width: 768px) {
   .timeline:before {
     left: 50%;
@@ -691,6 +705,7 @@ section#contact :-ms-input-placeholder {
 .footer {
   padding: 25px 0;
   text-align: center;
+  background-color: #F8F9FA;
 }
 
 .footer span.copyright {

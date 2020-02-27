@@ -36,8 +36,8 @@ const Portfolio = () => {
       description: `
       Full stack application built with React in front-end, Node.js in
       back-end, and SQLite for database.
-      This app is an amateur version of Udemy. 
-      User can create, read, update, delete courses`,
+      This app is an amateur version of Udemy (an online course platform). 
+      User can create, read, update, and delete courses`,
     },
   ];
   return (
