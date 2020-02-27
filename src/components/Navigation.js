@@ -1,6 +1,4 @@
-import React from 'react';
-import { Component } from 'react';
-import { createRef } from 'react';
+import React, { Component, createRef } from 'react';
 
 class Navigation extends Component {
   constructor() {
@@ -58,7 +56,7 @@ class Navigation extends Component {
           <div className='collapse navbar-collapse' id='navbarResponsive'>
             <ul className='navbar-nav text-uppercase ml-auto'>
               {menuItems.map(({ name, href }) => (
-                <li className='nav-item'>
+                <li className='nav-item' key={name}>
                   <a className='nav-link js-scroll-trigger' href={href}>
                     {name}
                   </a>
