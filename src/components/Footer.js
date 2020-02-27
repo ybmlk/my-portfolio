@@ -17,7 +17,7 @@ const Footer = () => {
               </li>
               <li className='list-inline-item'>
                 <a href='#home'>
-                  <i className='fa fa-github'></i>
+                  <i className='fab fa-github'></i>
                 </a>
               </li>
             </ul>

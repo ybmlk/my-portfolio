@@ -24,9 +24,9 @@ class Navigation extends Component {
     if (prevState.navBarOffset !== navBarOffset) {
       // Shrink navbar when scroll down
       if (navBarOffset > 100) {
-        current.className = 'navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink';
+        current.classList.add('navbar-shrink');
       } else {
-        current.className = 'navbar navbar-expand-lg navbar-dark fixed-top ';
+        current.classList.remove('navbar-shrink');
       }
     }
   }
@@ -53,8 +53,8 @@ class Navigation extends Component {
           <div className='collapse navbar-collapse' id='navbarResponsive'>
             <ul className='navbar-nav text-uppercase ml-auto'>
               <li className='nav-item'>
-                <a className='nav-link js-scroll-trigger' href='#services'>
-                  Services
+                <a className='nav-link js-scroll-trigger' href='#skills'>
+                  Skills
                 </a>
               </li>
               <li className='nav-item'>
