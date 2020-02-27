@@ -65,8 +65,8 @@ class Navigation extends Component {
               <li className='nav-item'>
                 <a
                   className='nav-link js-scroll-trigger'
-                  href='../assets/Resume.pdf'
-                  download='Resume.pdf'
+                  href='https://drive.google.com/uc?export=download&id=1AemZk0nKxAsyOdEc-qfGJk9SAFO3lem6'
+                  download='Yonatan_Melka_Resume.pdf'
                 >
                   Resume <i className='fa fa-download'></i>
                 </a>
