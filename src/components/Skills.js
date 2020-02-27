@@ -29,9 +29,7 @@ const Skills = () => {
         <div className='row'>
           <div className='col-lg-12 text-center'>
             <h2 className='section-heading text-uppercase'>Skills</h2>
-            <h3 className='section-subheading text-muted'>
-              Programming Languages and Technologies
-            </h3>
+            <h3 className='section-subheading text-muted'>I am proficient with:</h3>
           </div>
         </div>
 

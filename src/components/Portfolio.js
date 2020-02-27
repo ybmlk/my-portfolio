@@ -47,7 +47,7 @@ const Portfolio = () => {
           <div className='col-lg-12 text-center'>
             <h2 className='section-heading text-uppercase'>Projects</h2>
             <h3 className='section-subheading text-muted'>
-              Some of my greatest and latest projects.
+              Some of my latest and greatest projects.
             </h3>
           </div>
         </div>

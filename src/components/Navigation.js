@@ -32,11 +32,16 @@ class Navigation extends Component {
   }
 
   render() {
+    const menuItems = [
+      { name: 'Skills', href: '#skills' },
+      { name: 'Projects', href: '#portfolio' },
+      { name: 'About', href: '#about' },
+    ];
     return (
       <nav className='navbar navbar-expand-lg navbar-dark fixed-top' ref={this.navRef} id='mainNav'>
         <div className='container'>
           <a className='navbar-brand js-scroll-trigger' href='#page-top'>
-            Start Bootstrap
+            Yonatan Melka
           </a>
           <button
             className='navbar-toggler navbar-toggler-right'
@@ -52,29 +57,20 @@ class Navigation extends Component {
           </button>
           <div className='collapse navbar-collapse' id='navbarResponsive'>
             <ul className='navbar-nav text-uppercase ml-auto'>
+              {menuItems.map(({ name, href }) => (
+                <li className='nav-item'>
+                  <a className='nav-link js-scroll-trigger' href={href}>
+                    {name}
+                  </a>
+                </li>
+              ))}
               <li className='nav-item'>
-                <a className='nav-link js-scroll-trigger' href='#skills'>
-                  Skills
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link js-scroll-trigger' href='#portfolio'>
-                  Projects
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link js-scroll-trigger' href='#about'>
-                  About
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link js-scroll-trigger' href='#team'>
-                  Team
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link js-scroll-trigger' href='#contact'>
-                  Contact
+                <a
+                  className='nav-link js-scroll-trigger'
+                  href='../assets/Resume.pdf'
+                  download='Resume.pdf'
+                >
+                  Resume <i className='fa fa-download'></i>
                 </a>
               </li>
             </ul>
