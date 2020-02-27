@@ -13,10 +13,18 @@ a {
   color: #fed136;
 }
 
+a.project {
+  color: white;
+}
+
 a:hover {
   color: #fec503;
 }
 
+a.project:hover {
+  color: #f0efef;
+  text-decoration: none;
+}
 .text-primary {
   color: #fed136 !important;
 }
