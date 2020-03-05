@@ -31,7 +31,7 @@ const Portfolio = () => {
     {
       title: 'Udemy Clone',
       image: udemy,
-      live: 'https://github.com/ybmlk/udemy-clone-project-10',
+      live: 'https://udemy-clone-proj.herokuapp.com/',
       github: 'https://github.com/ybmlk/udemy-clone-project-10',
       description: `
       Full stack application built with React in front-end, Node.js in
