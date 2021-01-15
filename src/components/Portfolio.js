@@ -1,43 +1,39 @@
 import React from 'react';
 
-import gallery from '../assets/img/gallery-app3.png';
-import fortune from '../assets/img/wheel-forture3.png';
-import udemy from '../assets/img/udemy-clone3.png';
+import telegramBot from '../assets/img/telegram.PNG';
+import pathFinder from '../assets/img/path-finder.PNG';
+import sorting from '../assets/img/udemy-clone3.png';
 
 const Portfolio = () => {
   const projects = [
     {
-      title: 'React Gallery App',
-      image: gallery,
-      live: 'https://react-gallery-app-proj.netlify.com',
-      github: 'https://github.com/ybmlk/react-gallery-app-project-7',
+      title: 'eBook Downloader Bot',
+      image: telegramBot,
+      live: 'https://telegram.me/yoni_book_bot',
+      github: 'https://github.com/ybmlk/telegram-book-download',
       description: `
-      Built with React framework a gallery for displaying photos.
-      Fetches the photos from Flickr API.
-      Allows searching for all kinds of photos.
-      Pagination at the bottom allows loading more pages.`,
+      Telegram bot that allows users to search and download eBooks.
+      Over 200 users have downloaded close to 900 books.
+      Popular in developing countries with slow internet connection.`,
     },
     {
-      title: 'Wheel Of Fortune',
-      image: fortune,
+      title: 'Path Finding Visualizer',
+      image: pathFinder,
+      live: 'https://pathfinding-visualizer-ybmlk.netlify.app/',
+      github: 'https://github.com/ybmlk/pathfinding-visualizer',
+      description: `
+      Web application built with React framework for visualizing 
+      shortest path finding and maze-generation algorithms. 
+      Implements Dijkstra's shortest path algorithm `,
+    },
+    {
+      title: 'Sorting Visualizer',
+      image: sorting,
       live: 'https://wheel-of-forture.netlify.com/',
-      github: 'https://github.com/ybmlk/wheel-of-fortune-project-4',
-      description: `
-      Built with Vanilla JavaScript for word guessing game. It follows
-      Object-oriented programming.
-      Fetches a random word from Datamuse API and the user will be given
-      five chances to guess the right word.`,
-    },
-    {
-      title: 'Udemy Clone',
-      image: udemy,
-      live: 'https://udemy-clone-proj.herokuapp.com/',
       github: 'https://github.com/ybmlk/udemy-clone-project-10',
       description: `
-      Full stack application built with React in front-end, Node.js in
-      back-end, and SQLite for database.
-      This app is an amateur version of Udemy (an online course platform). 
-      User can create, read, update, and delete courses`,
+      Web application built with JavaScript for visualizing sorting algorithms 
+      Implements Merge Sort, Quick Sort, Heap Sort, and Bubble Sort`,
     },
   ];
   return (
@@ -56,7 +52,7 @@ const Portfolio = () => {
           {projects.map(({ title, image, live, github, description }) => (
             <div className='col-md-4 col-sm-6 portfolio-item' key={title}>
               <div className='portfolio-link' data-toggle='modal'>
-                <div className='portfolio-hover'>
+                <div style={{ zIndex: 9 }} className='portfolio-hover'>
                   <div className='portfolio-hover-content'>
                     <ul className='list-inline'>
                       <li className='list-inline-item mr-5'>
@@ -84,9 +80,18 @@ const Portfolio = () => {
                     </ul>
                   </div>
                 </div>
-                <img className='img-fluid' src={image} alt='' />
+                <div
+                  style={{
+                    height: '260px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    backgroundColor: '#fff',
+                  }}
+                >
+                  <img style={{ objectFit: 'cover' }} className='img-fluid' src={image} alt='' />
+                </div>
               </div>
-              <div className='portfolio-caption'>
+              <div style={{ height: '220px' }} className='portfolio-caption'>
                 <h4>{title}</h4>
                 <p className='text-muted'>{description}</p>
               </div>
