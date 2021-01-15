@@ -2,7 +2,7 @@ import React from 'react';
 
 import telegramBot from '../assets/img/telegram.PNG';
 import pathFinder from '../assets/img/path-finder.PNG';
-import sorting from '../assets/img/udemy-clone3.png';
+// import sorting from '../assets/img/udemy-clone3.png';
 
 const Portfolio = () => {
   const projects = [
@@ -26,15 +26,15 @@ const Portfolio = () => {
       shortest path finding and maze-generation algorithms. 
       Implements Dijkstra's shortest path algorithm `,
     },
-    {
-      title: 'Sorting Visualizer',
-      image: sorting,
-      live: 'https://wheel-of-forture.netlify.com/',
-      github: 'https://github.com/ybmlk/udemy-clone-project-10',
-      description: `
-      Web application built with JavaScript for visualizing sorting algorithms 
-      Implements Merge Sort, Quick Sort, Heap Sort, and Bubble Sort`,
-    },
+    // {
+    //   title: 'Sorting Visualizer',
+    //   image: sorting,
+    //   live: 'https://wheel-of-forture.netlify.com/',
+    //   github: 'https://github.com/ybmlk/udemy-clone-project-10',
+    //   description: `
+    //   Web application built with JavaScript for visualizing sorting algorithms 
+    //   Implements Merge Sort, Quick Sort, Heap Sort, and Bubble Sort`,
+    // },
   ];
   return (
     <section className='bg-light page-section' id='portfolio'>

@@ -27,18 +27,16 @@ const About = () => {
               <h2>Bio</h2>
             </div>
             <div className='timeline-body'>
-              <p>
-                My name is Yonatan Melka, and I am a Full-stack web developer. I graduated from St.
-                Norbert College in May of 2019 with a 3.9 GPA. <br />
-                <br />
-                My interest in web development started back in high school. However, to solidify my
-                web dev. skills with the latest technologies, I attended an online coding Bootcamp
-                at Treehouse. I am proficient in all the important web dev. technologies. <br /> I
-                have included my skills <a href='#skills'> here. </a> <br />
+              <p style={{ textAlign: 'justify' }}>
+                My name is Yonatan Melka, and I am a a full-stack software engineer focused on
+                frontend development and recent graduate of St. Norbert College with summa cum
+                laude(3.9 GPA). Interested in building scalable practical applications and learning
+                new technologies along the way. I have included my skills{' '}
+                <a href='#skills'> here. </a> <br />
                 <br /> I am a ferocious learner, a team player, and highly adaptable to new
-                environments. <br /> I have a strong work ethic which allowed me to succeed in my
-                school work and graduate with Summa Cum Laude. <br /> I have worked on several
-                personal projects. I have included some of them <a href='#portfolio'> here. </a>
+                environments. I have a strong work ethic which allowed me to succeed in my school
+                work. I have worked on several personal projects. I have included some of them{' '}
+                <a href='#portfolio'> here. </a>
               </p>
             </div>
           </div>
